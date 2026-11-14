@@ -13,7 +13,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Private-Social-Network-Intranet/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Private-Social-Network-Intranet?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Private-Social-Network-Intranet/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Private-Social-Network-Intranet?style=flat-square&logo=github&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Private-Social-Network-Intranet/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Private-Social-Network-Intranet?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Private-Social-Network-Intranet/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Private-Social-Network-Intranet?style=flat-square&color=red" alt="GitHub Issues" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Private-Social-Network-Intranet/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square" alt="License: CC0-1.0" /></a>
@@ -93,79 +93,79 @@ Commercial, cloud-hosted Private Social Network and Intranet platforms. These ar
 
 Self-hosted, community-driven Private Social Network, Forum, and Intranet tools that ensure full data ownership, GDPR/HIPAA compliance, and privacy sovereignty. Ranked below in descending order by GitHub community stargazers.
 
-### 🐘 Mastodon [![GitHub stars](https://img.shields.io/github/stars/mastodon/mastodon?style=social&color=white)](https://github.com/mastodon/mastodon/stargazers)
+### 🐘 Mastodon [![GitHub_Stars](https://img.shields.io/github/stars/mastodon/mastodon?style=social&color=white)](https://github.com/mastodon/mastodon/stargazers)
 - **Stack:** Ruby on Rails / Node.js / PostgreSQL / Redis | **License:** AGPL-3.0
 - **Overview:** Mastodon is the leading decentralized, microblogging social network platform. For organizations and private networks, Mastodon can be deployed in private/authorized-fetch mode where registrations are invite-only or gated via corporate OAuth/SAML, turning it into an internal corporate microblogging feed akin to Yammer or Twitter.
 - **Key Features:** ActivityPub federation (optional/toggleable), granular privacy controls (followers-only posts), native Android/iOS mobile clients, rich media attachments, hashtags, and moderation tooling.
 - **Best For:** Organizations wanting an internal corporate microblogging feed, executive broadcast stream, or private enterprise community network.
 
-### 💬 Discourse [![GitHub stars](https://img.shields.io/github/stars/discourse/discourse?style=social&color=white)](https://github.com/discourse/discourse/stargazers)
+### 💬 Discourse [![GitHub_Stars](https://img.shields.io/github/stars/discourse/discourse?style=social&color=white)](https://github.com/discourse/discourse/stargazers)
 - **Stack:** Ruby on Rails / PostgreSQL / Redis | **License:** GPL-2.0
 - **Overview:** Discourse is a modern open-source discussion platform that organizes posts into categories and searchable threads. Positioned as the premier open-source tool for **durable knowledge sharing, internal town halls, and asynchronous team discussions**, it replaces noisy chat or ephemeral feeds with structured, searchable conversations.
 - **Key Features:** Dynamic notification stream, comprehensive trust metrics, granular permissions, built-in search with AI summarization plugins, community polls, and single sign-on (SSO) integration.
 - **Best For:** Organizations wanting structured long-form discussions, internal company Q&A, and policy/announcement repositories.
 
-### 🚀 Rocket.Chat [![GitHub stars](https://img.shields.io/github/stars/RocketChat/Rocket.Chat?style=social&color=white)](https://github.com/RocketChat/Rocket.Chat/stargazers)
+### 🚀 Rocket.Chat [![GitHub_Stars](https://img.shields.io/github/stars/RocketChat/Rocket.Chat?style=social&color=white)](https://github.com/RocketChat/Rocket.Chat/stargazers)
 - **Stack:** TypeScript / Node.js / MongoDB | **License:** MIT / Open Core
 - **Overview:** Rocket.Chat is a comprehensive open-source team communications hub featuring real-time messaging, audio/video conferencing, channels, omnichannel customer routing, and Matrix federation. It provides private communication channels, team broadcast rooms, and deep compliance features for high-security intranets.
 - **Key Features:** End-to-end encryption (E2EE), guest access portals, enterprise directory sync (Active Directory, LDAP), audio/video rooms via Jitsi/WebRTC, and unlimited message auditing.
 - **Best For:** Enterprises needing a privacy-first, on-premises collaboration and real-time team communication hub.
 
-### 📝 Outline [![GitHub stars](https://img.shields.io/github/stars/outline/outline?style=social&color=white)](https://github.com/outline/outline/stargazers)
+### 📝 Outline [![GitHub_Stars](https://img.shields.io/github/stars/outline/outline?style=social&color=white)](https://github.com/outline/outline/stargazers)
 - **Stack:** TypeScript / Node.js / React / PostgreSQL / Redis | **License:** BSL 1.1 / Community
 - **Overview:** Outline is a fast, collaborative team knowledge base and intranet wiki. Built for modern teams, it provides markdown-first documentation, real-time co-editing, robust search, and granular access controls for building internal knowledge hubs and company handbooks.
 - **Key Features:** Real-time multiplayer collaborative editing, nested document hierarchy, lightning-fast instant search, Slack/Google Workspace/OIDC integrations, and public/private team collections.
 - **Best For:** Teams building an internal documentation intranet, company handbook, and centralized operational knowledge base.
 
-### 🛡️ Mattermost [![GitHub stars](https://img.shields.io/github/stars/mattermost/mattermost?style=social&color=white)](https://github.com/mattermost/mattermost/stargazers)
+### 🛡️ Mattermost [![GitHub_Stars](https://img.shields.io/github/stars/mattermost/mattermost?style=social&color=white)](https://github.com/mattermost/mattermost/stargazers)
 - **Stack:** Go / React / PostgreSQL | **License:** MIT (Team Edition) / Open Core
 - **Overview:** Mattermost is an enterprise-grade secure collaboration platform that combines real-time channels, structured playbooks, and audio calling. Positioned as a self-hosted alternative to Slack and Workplace Chat, it integrates seamlessly into corporate intranets requiring high data sovereignty and private cloud deployment.
 - **Key Features:** Channel-based messaging, automated incident playbooks, self-hosted voice calls & screen sharing, granular compliance exports, and enterprise SSO (SAML 2.0).
 - **Best For:** Technical and regulated organizations seeking self-hosted team communication with integrated operational playbooks.
 
-### ☁️ Nextcloud Hub [![GitHub stars](https://img.shields.io/github/stars/nextcloud/server?style=social&color=white)](https://github.com/nextcloud/server/stargazers)
+### ☁️ Nextcloud Hub [![GitHub_Stars](https://img.shields.io/github/stars/nextcloud/server?style=social&color=white)](https://github.com/nextcloud/server/stargazers)
 - **Stack:** PHP / Vue.js / MariaDB / PostgreSQL | **License:** AGPL-3.0
 - **Overview:** Nextcloud Hub is a comprehensive self-hosted productivity and intranet suite that unifies file sharing (Nextcloud Files), chat/video calls (Nextcloud Talk), groupware (Mail, Calendar, Contacts), and office document editing into a single digital workplace portal.
 - **Key Features:** Universal web dashboard with social activity widgets, internal Circles (user groups), collaborative online document editing (via Collabora or OnlyOffice), federated sharing, and cross-platform apps.
 - **Best For:** Organizations needing an all-in-one private cloud intranet combining document storage, calendar, chat, and collaborative office tools.
 
-### ⚡ Zulip [![GitHub stars](https://img.shields.io/github/stars/zulip/zulip?style=social&color=white)](https://github.com/zulip/zulip/stargazers)
+### ⚡ Zulip [![GitHub_Stars](https://img.shields.io/github/stars/zulip/zulip?style=social&color=white)](https://github.com/zulip/zulip/stargazers)
 - **Stack:** Python / Django / TypeScript / PostgreSQL | **License:** Apache-2.0
 - **Overview:** Zulip is an open-source team collaboration tool that combines the immediacy of real-time chat with the asynchronous structure of email threading. Every message belongs to a specific topic within a stream, eliminating context switching and keeping conversations focused.
 - **Key Features:** Unique stream-and-topic threading model, keyboard-driven navigation, enterprise LDAP/SAML authentication, rich Markdown with LaTeX/code syntax highlighting, and 90+ native integrations.
 - **Best For:** Distributed teams and companies seeking structured, topic-threaded communication that prevents information overload.
 
-### 💡 NodeBB [![GitHub stars](https://img.shields.io/github/stars/NodeBB/NodeBB?style=social&color=white)](https://github.com/NodeBB/NodeBB/stargazers)
+### 💡 NodeBB [![GitHub_Stars](https://img.shields.io/github/stars/NodeBB/NodeBB?style=social&color=white)](https://github.com/NodeBB/NodeBB/stargazers)
 - **Stack:** Node.js / MongoDB / Redis | **License:** GPL-3.0
 - **Overview:** NodeBB is a fast, responsive modern forum engine built with web sockets for real-time interactions, streaming notifications, and mobile readiness. It is widely used to power internal employee communities, knowledge-sharing hubs, and private customer forums.
 - **Key Features:** Instant real-time updates via WebSockets, built-in chat, social sharing plugins, rich gamification with badges and reputation scores, and comprehensive REST APIs.
 - **Best For:** Teams looking for a modern, real-time community forum with extensive plugin support and seamless SSO.
 
-### 👥 HumHub [![GitHub stars](https://img.shields.io/github/stars/humhub/humhub?style=social&color=white)](https://github.com/humhub/humhub/stargazers)
+### 👥 HumHub [![GitHub_Stars](https://img.shields.io/github/stars/humhub/humhub?style=social&color=white)](https://github.com/humhub/humhub/stargazers)
 - **Stack:** PHP / Yii2 / MySQL | **License:** AGPL-3.0 (open core)
 - **Overview:** HumHub is the premier open-source social intranet platform and the closest analog to Workplace from Meta. It features user profiles, Spaces (groups) with individual walls, a network-wide social activity stream, wikis, tasks, shared calendars, files, and mobile apps. It supports LDAP and SAML for enterprise identity federation.
 - **Key Features:** Activity streams (news feed), modular Spaces for departments and project squads, rich marketplace of add-on modules, integrated wiki, task management boards, and mobile push notifications.
 - **Best For:** Organizations and member communities wanting a turnkey self-hosted social intranet with a social news feed, team spaces, and internal wikis.
 
-### 🏛️ Liferay Community Edition [![GitHub stars](https://img.shields.io/github/stars/liferay/liferay-portal?style=social&color=white)](https://github.com/liferay/liferay-portal/stargazers)
+### 🏛️ Liferay Community Edition [![GitHub_Stars](https://img.shields.io/github/stars/liferay/liferay-portal?style=social&color=white)](https://github.com/liferay/liferay-portal/stargazers)
 - **Stack:** Java | **License:** LGPL-2.1
 - **Overview:** Liferay is an enterprise portal and digital experience platform designed for building complex, multi-site corporate intranets. It features drag-and-drop widget composition, role-based content personalization, document management, forms, and deep enterprise identity integration.
 - **Key Features:** Multi-tenant and multi-site architecture, granular role-based access control (RBAC), CMS and workflow engines, modular OSGi-based extensions, and extensive enterprise integration hooks.
 - **Best For:** Large enterprise organizations needing a highly customizable, portal-based corporate intranet with granular delegated administration.
 
-### 🧩 Elgg [![GitHub stars](https://img.shields.io/github/stars/Elgg/Elgg?style=social&color=white)](https://github.com/Elgg/Elgg/stargazers)
+### 🧩 Elgg [![GitHub_Stars](https://img.shields.io/github/stars/Elgg/Elgg?style=social&color=white)](https://github.com/Elgg/Elgg/stargazers)
 - **Stack:** PHP / MySQL | **License:** GPL-2.0 / MIT
 - **Overview:** Elgg is a flexible open-source social engine framework built on an entity-relationship data model. Everything from blogs and activity feeds to user groups is handled via its modular plugin architecture, enabling developers to build bespoke social networking platforms.
 - **Key Features:** Granular entity access control, event-driven architecture, modular plugin ecosystem, user profile fields customization, and flexible relationship graphs.
 - **Best For:** Developers and technical teams wanting to architect a custom internal social network from an extensible engine.
 
-### 🤝 Open Social [![GitHub stars](https://img.shields.io/github/stars/goalgorilla/open_social?style=social&color=white)](https://github.com/goalgorilla/open_social/stargazers)
+### 🤝 Open Social [![GitHub_Stars](https://img.shields.io/github/stars/goalgorilla/open_social?style=social&color=white)](https://github.com/goalgorilla/open_social/stargazers)
 - **Stack:** PHP / Drupal | **License:** GPL-2.0 (open core)
 - **Overview:** Open Social is a community and intranet distribution built on Drupal. Designed as an alternative to Facebook Groups and Workplace, it provides social activity feeds, group management, event coordination, and discussion modules, leveraging Drupal's rich content-management ecosystem.
 - **Key Features:** Deep Drupal taxonomy and content modeling, event management with calendar integrations, member directories, and enterprise compliance modules.
 - **Best For:** Organizations already using Drupal or seeking a community intranet with robust content modeling.
 
-### 🏢 eXo Platform [![GitHub stars](https://img.shields.io/github/stars/exoplatform/platform?style=social&color=white)](https://github.com/exoplatform/platform/stargazers)
+### 🏢 eXo Platform [![GitHub_Stars](https://img.shields.io/github/stars/exoplatform/platform?style=social&color=white)](https://github.com/exoplatform/platform/stargazers)
 - **Stack:** Java | **License:** AGPL-3.0 (Community Edition)
 - **Overview:** eXo Platform is an open-source digital workplace solution combining enterprise social networking, team collaboration spaces, document management, wikis, task boards, and gamification rewards in a unified web portal.
 - **Key Features:** Collaborative Spaces, activity streams, document content management (DCM), gamification engine with recognition badges, and integrated task calendars.
