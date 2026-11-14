@@ -32,25 +32,16 @@
 
 Commercial, cloud-hosted Private Social Network and Intranet platforms. These are not open-source but are included as reference points for feature comparison.
 
-### Microsoft Viva Engage (Yammer)
-**Type:** Enterprise social network within Microsoft 365
-Viva Engage (formerly Yammer) provides a familiar social feed, communities, and conversations integrated directly into Microsoft Teams and the broader Microsoft 365 ecosystem. It is the default choice for organizations already standardized on Microsoft, with data governed by the tenant's compliance and retention policies.
+### Sector Overview & Market Dynamics
+The global Social Intranet and Enterprise Social Network (ESN) market is valued at approximately **$7B to $14B** and is projected to expand toward **$25B to $40B+** over the next decade at a 12–18% CAGR, propelled by remote/hybrid digital workplace transformations. The sector exhibits a distinct two-tier structure: **highly concentrated at the foundation layer**, where tech mega-vendors (Microsoft Viva/SharePoint, Salesforce/Slack, Google Workspace) bundle collaboration tools into existing enterprise suites, yet **moderately-to-highly fragmented in the dedicated intranet/employee-experience layer**, where independent vendors compete through specialized employee engagement, internal communication workflows, and tailored UI integrations.
 
-### Workplace from Meta
-**Type:** Enterprise social network with feed, chat, and groups
-Workplace combined a social news feed, team chat, and knowledge groups in a single platform. **Important status:** Meta announced Workplace's shutdown, with the service being discontinued. Organizations still on Workplace must plan migration to alternatives, and there is **no official importer** for HumHub, Mattermost, or Discourse [citation:11].
-
-### Simpplr
-**Type:** AI-powered employee experience and intranet platform
-Simpplr is an AI-powered employee experience platform that transforms workplace engagement, offering a seamless digital experience fostering connection, recognition, and productivity [citation:5]. It is positioned for enterprises wanting a modern, personalized intranet experience.
-
-### LumApps
-**Type:** Social intranet and employee communication platform
-LumApps provides a social intranet with personalized content, social feeds, and integration with Google Workspace and Microsoft 365. It is positioned for mid-market to enterprise organizations wanting a modern intranet experience.
-
-### Igloo Software
-**Type:** Digital workplace and intranet platform
-Igloo Software provides a digital workplace with news, blogs, wikis, forums, and file sharing. It is positioned for organizations wanting a comprehensive intranet with social collaboration features.
+| Platform | Type / Focus | Company Size (Valuation / Revenue) | Starting Tier Pricing | Free Tier / Trial Limits |
+|:---|:---|:---|:---|:---|
+| **Microsoft Viva Engage** | Enterprise social network within Microsoft 365 | ~$3.1T Market Cap / ~$245B Annual Revenue (Microsoft) | Included in M365 Business Basic ($6.00/user/mo) or E1 ($10.00/user/mo); standalone/advanced Viva Suite at $12.00/user/mo | Core features included free for existing Microsoft 365 / Office 365 tenants; 30-day free trial for premium Viva Suite add-on |
+| **Workplace from Meta** | Enterprise social network with feed, chat & groups | ~$1.5T Market Cap / ~$135B Annual Revenue (Meta) | Historically $4.00/user/mo (50% discount to $2.00/user/mo applied during sunset) | Deprecated/Shutting down (June 2026 final shutdown; read-only access mode Sept 2025 – May 2026 at no cost) |
+| **LumApps** | Social intranet & employee communication platform | $650M Valuation (Bridgepoint acquisition, 2024) / ~$60M–$70M ARR | ~£2.60–£3.20/user/mo (~$3.30–$4.10/user/mo, G-Cloud baseline) or ~$8.00/user/mo entry tier | No self-service free tier or self-serve trial; custom guided proof-of-concept / demo upon request |
+| **Simpplr** | AI-powered employee experience & intranet platform | ~$547M Valuation / Series D (~$70M raised) | £4.00/user/mo (~$5.10/user/mo, G-Cloud Simpplr One baseline; min. 500-user enterprise tiers) | 14-day free trial (sales-assisted upon qualification; no permanent free tier) |
+| **Igloo Software** | Digital workplace & modern intranet platform | ~$30M–$36M Annual Revenue (Acquired by Appspace, 2025) | ~$8.00/user/mo (standard baseline packages typically starting at $599/mo block minimum) | No self-service free tier or trial; guided demo / proof-of-concept upon sales qualification |
 
 ---
 
