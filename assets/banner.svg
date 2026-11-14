@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360">
+  <defs>
+    <!-- Background Linear Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0d1527" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .bg-grid { stroke: #1e293b; stroke-width: 0.7; stroke-opacity: 0.45; }
+    .pulse-circle { animation: pulse 4s ease-in-out infinite alternate; transform-origin: center; }
+    .float-slow { animation: floatSlow 6s ease-in-out infinite alternate; }
+    .float-fast { animation: floatFast 4.5s ease-in-out infinite alternate; }
+    .dash-flow { stroke-dasharray: 6 6; animation: dashMove 15s linear infinite; }
+    
+    @keyframes dashMove {
+      from { stroke-dashoffset: 0; }
+      to { stroke-dashoffset: 240; }
+    }
+    @keyframes pulse {
+      0% { r: 5px; opacity: 0.4; }
+      100% { r: 9px; opacity: 1; }
+    }
+    @keyframes floatSlow {
+      0% { transform: translateY(0px) rotate(0deg); }
+      100% { transform: translateY(-12px) rotate(3deg); }
+    }
+    @keyframes floatFast {
+      0% { transform: translateY(0px) rotate(0deg); }
+      100% { transform: translateY(10px) rotate(-2deg); }
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Background Grid Lines -->
+  <g class="bg-grid">
+    <line x1="100" y1="0" x2="100" y2="360" />
+    <line x1="250" y1="0" x2="250" y2="360" />
+    <line x1="400" y1="0" x2="400" y2="360" />
+    <line x1="550" y1="0" x2="550" y2="360" />
+    <line x1="700" y1="0" x2="700" y2="360" />
+    <line x1="850" y1="0" x2="850" y2="360" />
+    <line x1="1000" y1="0" x2="1000" y2="360" />
+    <line x1="1150" y1="0" x2="1150" y2="360" />
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+  </g>
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="150" cy="80" r="120" fill="#6366f1" opacity="0.12" filter="url(#glow)" />
+  <circle cx="1050" cy="280" r="140" fill="#ec4899" opacity="0.10" filter="url(#glow)" />
+  <circle cx="950" cy="80" r="100" fill="#06b6d4" opacity="0.12" filter="url(#glow)" />
+
+  <!-- Animated Dynamic Background Constellation / Flow Lines -->
+  <g stroke="#6366f1" stroke-width="1.5" stroke-opacity="0.35" fill="none" class="dash-flow">
+    <path d="M 50 180 Q 200 40 400 120 T 800 100 T 1150 200" />
+    <path d="M 100 280 Q 300 320 600 260 T 1100 150" stroke="#ec4899" stroke-opacity="0.25" />
+    <path d="M 80 80 Q 350 20 650 140 T 1120 300" stroke="#06b6d4" stroke-opacity="0.2" />
+  </g>
+
+  <!-- Animated Floating Network Nodes & Badges (Background/Accents) -->
+  <g class="float-slow">
+    <!-- Top-Right Accent Card: Security / Privacy -->
+    <rect x="940" y="45" width="200" height="58" rx="12" fill="url(#cardGrad)" stroke="#6366f1" stroke-width="1.2" stroke-opacity="0.5" />
+    <circle cx="965" cy="74" r="12" fill="#6366f1" opacity="0.3" />
+    <text x="965" y="79" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="14" fill="#818cf8" font-weight="bold" text-anchor="middle">🔒</text>
+    <text x="988" y="68" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="12" fill="#f8fafc" font-weight="600">Enterprise Privacy</text>
+    <text x="988" y="85" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="10" fill="#94a3b8">Self-Hosted &amp; Secure</text>
+  </g>
+
+  <g class="float-fast">
+    <!-- Bottom-Right Accent Card: Collaboration -->
+    <rect x="910" y="245" width="230" height="62" rx="12" fill="url(#cardGrad)" stroke="#ec4899" stroke-width="1.2" stroke-opacity="0.5" />
+    <circle cx="938" cy="276" r="13" fill="#ec4899" opacity="0.25" />
+    <text x="938" y="281" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="14" fill="#f472b6" font-weight="bold" text-anchor="middle">💬</text>
+    <text x="962" y="270" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="12" fill="#f8fafc" font-weight="600">Team Feeds &amp; Chat</text>
+    <text x="962" y="287" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="10" fill="#94a3b8">Real-Time Knowledge Sharing</text>
+  </g>
+
+  <g class="float-slow">
+    <!-- Left Accent Node: Open-Source Core -->
+    <rect x="55" y="245" width="220" height="60" rx="12" fill="url(#cardGrad)" stroke="#06b6d4" stroke-width="1.2" stroke-opacity="0.5" />
+    <circle cx="82" cy="275" r="12" fill="#06b6d4" opacity="0.25" />
+    <text x="82" y="280" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="14" fill="#38bdf8" font-weight="bold" text-anchor="middle">⚡</text>
+    <text x="104" y="269" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="12" fill="#f8fafc" font-weight="600">Open-Source Core</text>
+    <text x="104" y="286" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="10" fill="#94a3b8">HumHub, Nextcloud, Zulip</text>
+  </g>
+
+  <!-- Glowing Animated Pulse Dots -->
+  <circle cx="400" cy="120" r="7" fill="#6366f1" class="pulse-circle" />
+  <circle cx="800" cy="100" r="6" fill="#ec4899" class="pulse-circle" />
+  <circle cx="600" cy="260" r="8" fill="#06b6d4" class="pulse-circle" />
+  <circle cx="300" cy="320" r="5" fill="#a855f7" class="pulse-circle" />
+
+  <!-- ================= FOREGROUND (TITLE & SUBTITLE) ================= -->
+  <!-- Tag Pill -->
+  <g transform="translate(140, 68)">
+    <rect x="0" y="0" width="310" height="28" rx="14" fill="#1e1b4b" stroke="#6366f1" stroke-width="1" />
+    <circle cx="14" cy="14" r="5" fill="#22c55e" />
+    <text x="28" y="18" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="11.5" fill="#a5b4fc" font-weight="600" letter-spacing="0.5">CURATED AWESOME ARCHITECTURE LIST</text>
+  </g>
+
+  <!-- Main Hero Title -->
+  <text x="140" y="150" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="-0.8">
+    Awesome Private Social Network
+  </text>
+  <text x="140" y="200" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="44" font-weight="800" fill="url(#primaryGrad)" letter-spacing="-0.8">
+    &amp; Enterprise Intranet Platforms
+  </text>
+
+  <!-- Subtitle -->
+  <text x="140" y="240" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="15.5" font-weight="400" fill="#94a3b8">
+    A definitive guide to self-hosted open-source intranets, enterprise social networks &amp; SaaS collaboration suites.
+  </text>
+
+  <!-- Bottom Badges / Capabilities Bar -->
+  <g transform="translate(140, 268)">
+    <rect x="0" y="0" width="125" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="62" y="17" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="11" fill="#cbd5e1" font-weight="500" text-anchor="middle">🏢 Enterprise Portals</text>
+
+    <rect x="135" y="0" width="135" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="202" y="17" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="11" fill="#cbd5e1" font-weight="500" text-anchor="middle">📢 Internal Comms</text>
+
+    <rect x="280" y="0" width="130" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="345" y="17" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="11" fill="#cbd5e1" font-weight="500" text-anchor="middle">🛡️ Data Sovereignty</text>
+
+    <rect x="420" y="0" width="130" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="485" y="17" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="11" fill="#cbd5e1" font-weight="500" text-anchor="middle">💬 Social Feeds &amp; Chat</text>
+  </g>
+</svg>
