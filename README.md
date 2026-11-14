@@ -10,19 +10,21 @@
 ## 📋 Table of Contents
 
 - [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [Microsoft Viva Engage (Yammer)](#microsoft-viva-engage-yammer)
-  - [Workplace from Meta](#workplace-from-meta)
-  - [Simpplr](#simpplr)
-  - [LumApps](#lumapps)
-  - [Igloo Software](#igloo-software)
+  - [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [Open-Source Software](#-open-source-software)
+  - [Mastodon](#mastodon)
+  - [Discourse](#discourse)
+  - [Rocket.Chat](#rocketchat)
+  - [Outline](#outline)
+  - [Mattermost](#mattermost)
+  - [Nextcloud Hub](#nextcloud-hub)
+  - [Zulip](#zulip)
+  - [NodeBB](#nodebb)
   - [HumHub](#humhub)
+  - [Liferay Community Edition](#liferay-community-edition)
   - [Elgg](#elgg)
   - [Open Social](#open-social)
   - [eXo Platform](#exo-platform)
-  - [Liferay Community Edition](#liferay-community-edition)
-  - [Discourse](#discourse)
-  - [Mattermost](#mattermost)
 - [Comparison at a Glance](#-comparison-at-a-glance)
 - [Contributing](#-contributing)
 
@@ -47,59 +49,95 @@ The global Social Intranet and Enterprise Social Network (ESN) market is valued 
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven Private Social Network and Intranet tools. The open-source ecosystem is **anchored by HumHub** for social intranets, with complementary platforms for forums, chat, and portal-based intranets.
+Self-hosted, community-driven Private Social Network and Intranet tools. Ranked below in descending order by GitHub stargazers.
 
-### HumHub
-**Stack:** PHP / Yii2 / MySQL | **License:** AGPL (open core)
-HumHub is the closest open-source analog to Workplace's social feed and the leading open-source social intranet for private organizational networks [citation:2][citation:11]. Key features include **profiles, Spaces (groups) with their own walls and modules, a network-wide activity stream (dashboard), wiki, tasks, calendar, files, messaging, and a mobile app** [citation:3][citation:7]. It is designed for organizations, member communities, associations, and schools—not as a pure chat tool, but as a social network where announcements, documents, and discussions live together [citation:3][citation:15]. **Important licensing note:** HumHub has a dual license model with a free open-source edition and paid editions/apps available alongside the open code [citation:2]. It supports LDAP and SAML sign-on for enterprise identity integration [citation:2].  
-**Best for:** Organizations and member communities wanting a self-hosted social intranet with a familiar Facebook-style feed, Spaces for teams, and a wiki for durable knowledge, accepting the operational overhead of running a PHP/Yii2 stack.
+### Mastodon [![GitHub stars](https://img.shields.io/github/stars/mastodon/mastodon?style=social&color=white)](https://github.com/mastodon/mastodon/stargazers)
+**Stack:** Ruby on Rails / Node.js / PostgreSQL / Redis | **License:** AGPL-3.0  
+Mastodon is the leading decentralized, microblogging social network platform. For organizations and private networks, Mastodon can be deployed in private/authorized-fetch mode where registrations are invite-only or gated via OAuth/SAML, turning it into an internal corporate microblogging feed akin to Yammer or Twitter.  
+**Best for:** Organizations wanting a private corporate microblogging feed, executive broadcast stream, or decentralized community network with native mobile app support.
 
-### Elgg
-**Stack:** PHP / MySQL | **License:** Open Source
-Elgg is an open-source social engine framework known for its **extreme flexibility and plugin-based architecture**, where everything from blogs to groups is a plugin [citation:6]. Its data model is built around entities, relationships, metadata, and annotations, enabling highly dynamic social applications [citation:6]. It is positioned for developers wanting to build **custom social environments** rather than deploy a ready-made intranet [citation:2][citation:10]. **Trade-off:** The learning curve is steep, and the flexibility comes at the cost of needing significant development effort to assemble a complete intranet.  
-**Best for:** Developers and technical teams wanting to build a bespoke private social network from a flexible engine, accepting that significant customization is required.
+### Discourse [![GitHub stars](https://img.shields.io/github/stars/discourse/discourse?style=social&color=white)](https://github.com/discourse/discourse/stargazers)
+**Stack:** Ruby on Rails / PostgreSQL / Redis | **License:** GPL-2.0  
+Discourse is a modern open-source discussion platform that organizes posts into categories and searchable threads. Positioned as the premier open-source tool for **durable knowledge sharing, internal town halls, and asynchronous team discussions**, it replaces noisy chat or ephemeral feeds with structured, searchable conversations.  
+**Best for:** Organizations wanting structured long-form discussions, internal company Q&A, and policy/announcement repositories.
 
-### Open Social
-**Stack:** PHP / Drupal | **License:** GPL (open core)
-Open Social is a Drupal-based community platform positioned as an open-source alternative to Facebook Groups and Workplace [citation:3]. It is the natural choice for organizations **already running Drupal** or wanting a platform that leverages Drupal's content modeling and module ecosystem [citation:2]. It provides profiles, groups, feeds, and discussion features.  
-**Best for:** Drupal shops and organizations wanting a community platform built on a proven CMS foundation, particularly those with existing Drupal expertise.
+### Rocket.Chat [![GitHub stars](https://img.shields.io/github/stars/RocketChat/Rocket.Chat?style=social&color=white)](https://github.com/RocketChat/Rocket.Chat/stargazers)
+**Stack:** TypeScript / Node.js / MongoDB | **License:** MIT / Open Core  
+Rocket.Chat is a comprehensive open-source team communications hub featuring real-time messaging, audio/video conferencing, channels, omnichannel customer routing, and Matrix federation. It provides private communication channels, team broadcast rooms, and deep compliance features for high-security intranets.  
+**Best for:** Enterprises needing a privacy-first, on-premises collaboration and real-time team communication hub.
 
-### eXo Platform
-**Stack:** Java | **License:** AGPL (Community Edition)
-eXo Platform is a digital workplace solution that allows businesses to connect, engage, empower, and reward teams, available on-premise and on the cloud [citation:5]. It combines social collaboration with document management, wikis, and calendars. It is positioned for mid-market to enterprise organizations wanting a comprehensive digital workplace.  
-**Best for:** Organizations wanting a full-featured digital workplace with social collaboration and document management, accepting a Java-based deployment.
+### Outline [![GitHub stars](https://img.shields.io/github/stars/outline/outline?style=social&color=white)](https://github.com/outline/outline/stargazers)
+**Stack:** TypeScript / Node.js / React / PostgreSQL / Redis | **License:** BSL 1.1 / Community  
+Outline is a fast, collaborative team knowledge base and intranet wiki. Built for modern teams, it provides markdown-first documentation, real-time co-editing, robust search, and granular access controls for building internal knowledge hubs and company handbooks.  
+**Best for:** Teams building an internal documentation intranet, company handbook, and centralized operational knowledge base.
 
-### Liferay Community Edition
-**Stack:** Java | **License:** LGPL (Community Edition)
-Liferay is a portal platform that lets organizations build intranet pages by dragging and dropping widgets—documents, wikis, message boards, forms, and custom applications [citation:13]. It is designed for enterprises needing **multi-site intranets with delegated administration**, personalized dashboards, and complex authentication requirements (SAML, OAuth, LDAP) [citation:13]. **Trade-off:** It is resource-heavy and has a steeper learning curve, requiring Java and portal development skills for a polished intranet [citation:13].  
-**Best for:** Large organizations needing a highly customizable, portal-based intranet with multiple departmental sites and strong enterprise features.
+### Mattermost [![GitHub stars](https://img.shields.io/github/stars/mattermost/mattermost?style=social&color=white)](https://github.com/mattermost/mattermost/stargazers)
+**Stack:** Go / React / PostgreSQL | **License:** MIT (Team Edition) / Open Core  
+Mattermost is an enterprise-grade secure collaboration platform that combines real-time channels, structured playbooks, and audio calling. Positioned as a self-hosted alternative to Slack and Workplace Chat, it integrates seamlessly into corporate intranets requiring high data sovereignty and private cloud deployment.  
+**Best for:** Technical and regulated organizations seeking self-hosted team communication with integrated operational playbooks.
 
-### Discourse
-**Stack:** Ruby on Rails / PostgreSQL / Redis | **License:** GPL
-Discourse is an open-source forum platform that organizes posts into topics and categories, positioned as the open-source replacement for **durable discussion and announcements** rather than social feeds or chat [citation:11]. It is often paired with HumHub in a stack: HumHub for the social intranet feed, Discourse for structured long-form discussion, and Mattermost for chat [citation:11].  
-**Best for:** Teams wanting a structured, searchable discussion forum for announcements and knowledge sharing, often used alongside a social intranet.
+### Nextcloud Hub [![GitHub stars](https://img.shields.io/github/stars/nextcloud/server?style=social&color=white)](https://github.com/nextcloud/server/stargazers)
+**Stack:** PHP / Vue.js / MariaDB / PostgreSQL | **License:** AGPL-3.0  
+Nextcloud Hub is a comprehensive self-hosted productivity and intranet suite that unifies file sharing (Nextcloud Files), chat/video calls (Nextcloud Talk), groupware (Mail, Calendar, Contacts), and office document editing into a single digital workplace portal.  
+**Best for:** Organizations needing an all-in-one private cloud intranet combining document storage, calendar, chat, and collaborative office tools.
 
-### Mattermost
-**Stack:** Go / React / PostgreSQL | **License:** MIT (Team Edition) / Open Core
-Mattermost is an open-source team chat platform designed for secure, self-hosted communication, positioned as a Slack alternative for organizations that cannot put data in a public cloud [citation:3]. **Important distinction:** It is a **chat tool**, not a social intranet—it replaces the chat function of Workplace or Teams, not the news feed or groups [citation:11][citation:15]. The Team Edition is free for up to 250 activated users with unlimited message history, though free mobile push notifications route through the Test Push Notification Service (TPNS), which is not recommended for production [citation:15].  
-**Best for:** Technical teams needing self-hosted team chat, often deployed alongside HumHub and Discourse to cover the full Workplace feature set.
+### Zulip [![GitHub stars](https://img.shields.io/github/stars/zulip/zulip?style=social&color=white)](https://github.com/zulip/zulip/stargazers)
+**Stack:** Python / Django / TypeScript / PostgreSQL | **License:** Apache-2.0  
+Zulip is an open-source team collaboration tool that combines the immediacy of real-time chat with the asynchronous structure of email threading. Every message belongs to a specific topic within a stream, eliminating context switching and keeping conversations focused.  
+**Best for:** Distributed teams and companies seeking structured, topic-threaded communication that prevents information overload.
+
+### NodeBB [![GitHub stars](https://img.shields.io/github/stars/NodeBB/NodeBB?style=social&color=white)](https://github.com/NodeBB/NodeBB/stargazers)
+**Stack:** Node.js / MongoDB / Redis | **License:** GPL-3.0  
+NodeBB is a fast, responsive modern forum engine built with web sockets for real-time interactions, streaming notifications, and mobile readiness. It is widely used to power internal employee communities, knowledge-sharing hubs, and private customer forums.  
+**Best for:** Teams looking for a modern, real-time community forum with extensive plugin support and seamless SSO.
+
+### HumHub [![GitHub stars](https://img.shields.io/github/stars/humhub/humhub?style=social&color=white)](https://github.com/humhub/humhub/stargazers)
+**Stack:** PHP / Yii2 / MySQL | **License:** AGPL-3.0 (open core)  
+HumHub is the premier open-source social intranet platform and the closest analog to Workplace from Meta. It features user profiles, Spaces (groups) with individual walls, a network-wide social activity stream, wikis, tasks, shared calendars, files, and mobile apps. It supports LDAP and SAML for enterprise identity federation.  
+**Best for:** Organizations and member communities wanting a turnkey self-hosted social intranet with a social news feed, team spaces, and internal wikis.
+
+### Liferay Community Edition [![GitHub stars](https://img.shields.io/github/stars/liferay/liferay-portal?style=social&color=white)](https://github.com/liferay/liferay-portal/stargazers)
+**Stack:** Java | **License:** LGPL-2.1  
+Liferay is an enterprise portal and digital experience platform designed for building complex, multi-site corporate intranets. It features drag-and-drop widget composition, role-based content personalization, document management, forms, and deep enterprise identity integration.  
+**Best for:** Large enterprise organizations needing a highly customizable, portal-based corporate intranet with granular delegated administration.
+
+### Elgg [![GitHub stars](https://img.shields.io/github/stars/Elgg/Elgg?style=social&color=white)](https://github.com/Elgg/Elgg/stargazers)
+**Stack:** PHP / MySQL | **License:** GPL-2.0 / MIT  
+Elgg is a flexible open-source social engine framework built on an entity-relationship data model. Everything from blogs and activity feeds to user groups is handled via its modular plugin architecture, enabling developers to build bespoke social networking platforms.  
+**Best for:** Developers and technical teams wanting to architect a custom internal social network from an extensible engine.
+
+### Open Social [![GitHub stars](https://img.shields.io/github/stars/goalgorilla/open_social?style=social&color=white)](https://github.com/goalgorilla/open_social/stargazers)
+**Stack:** PHP / Drupal | **License:** GPL-2.0 (open core)  
+Open Social is a community and intranet distribution built on Drupal. Designed as an alternative to Facebook Groups and Workplace, it provides social activity feeds, group management, event coordination, and discussion modules, leveraging Drupal's rich content-management ecosystem.  
+**Best for:** Organizations already using Drupal or seeking a community intranet with robust content modeling.
+
+### eXo Platform [![GitHub stars](https://img.shields.io/github/stars/exoplatform/platform?style=social&color=white)](https://github.com/exoplatform/platform/stargazers)
+**Stack:** Java | **License:** AGPL-3.0 (Community Edition)  
+eXo Platform is an open-source digital workplace solution combining enterprise social networking, team collaboration spaces, document management, wikis, task boards, and gamification rewards in a unified web portal.  
+**Best for:** Mid-market to enterprise companies looking for an all-in-one digital workplace and social collaboration suite.
 
 ---
 
 ## 📊 Comparison at a Glance
 
 | Software | License | Stack | Social Feed | Spaces/Groups | Chat | Self-Hosted | Best For |
-|----------|---------|-------|-------------|---------------|------|-------------|----------|
+|:---|:---|:---|:---:|:---:|:---:|:---:|:---|
 | **Viva Engage** | Proprietary | Cloud | ✅ | ✅ Communities | (Teams) | ❌ | Microsoft 365 enterprises |
 | **Workplace** | Proprietary | Cloud | ✅ | ✅ Groups | ✅ | ❌ | (Shutting down) |
 | **Simpplr** | Proprietary | Cloud | ✅ | (Check) | ❌ | ❌ | AI-powered employee experience |
-| **HumHub** | AGPL (open core) | PHP/Yii2 | ✅ | ✅ Spaces | ❌ (Not chat) | ✅ | Social intranet + wiki |
-| **Elgg** | Open Source | PHP/MySQL | ✅ (Custom) | ✅ (Plugins) | ❌ | ✅ | Custom social networks |
-| **Open Social** | GPL (open core) | PHP/Drupal | ✅ | ✅ Groups | ❌ | ✅ | Drupal community platform |
-| **eXo Platform** | AGPL (Community) | Java | ✅ | ✅ Spaces | (Chat) | ✅ | Digital workplace |
-| **Liferay CE** | LGPL (Community) | Java | (Portlets) | ✅ Sites | ❌ | ✅ | Multi-site portal intranet |
-| **Discourse** | GPL | Ruby/Rails | ❌ (Forum) | ✅ Categories | ❌ | ✅ | Structured discussion |
-| **Mattermost** | MIT (Team) | Go/Postgres | ❌ | ✅ Channels | ✅ | ✅ | Self-hosted team chat |
+| **Mastodon** | AGPL-3.0 | Ruby/Rails | ✅ | ❌ (Hashtags) | ❌ | ✅ | Private corporate microblogging |
+| **Discourse** | GPL-2.0 | Ruby/Rails | ❌ (Forum) | ✅ Categories | ❌ | ✅ | Structured discussion & Q&A |
+| **Rocket.Chat** | MIT / Open Core | TS/Node | ❌ | ✅ Channels | ✅ | ✅ | Privacy-first team communication |
+| **Outline** | BSL 1.1 / Open | TS/Node | ❌ | ✅ Collections | ❌ | ✅ | Modern team knowledge base/wiki |
+| **Mattermost** | MIT / Open Core | Go/Postgres | ❌ | ✅ Channels | ✅ | ✅ | Self-hosted secure team chat |
+| **Nextcloud Hub**| AGPL-3.0 | PHP/Vue | ✅ (Activity) | ✅ Circles | ✅ (Talk) | ✅ | All-in-one private cloud intranet |
+| **Zulip** | Apache-2.0 | Python/Django | ❌ | ✅ Streams | ✅ (Threaded) | ✅ | Asynchronous topic-threaded chat |
+| **NodeBB** | GPL-3.0 | Node.js | ❌ | ✅ Categories | ❌ | ✅ | Real-time community forum |
+| **HumHub** | AGPL-3.0 | PHP/Yii2 | ✅ | ✅ Spaces | ❌ (Not chat) | ✅ | Social intranet + team spaces |
+| **Liferay CE** | LGPL-2.1 | Java | (Portlets) | ✅ Sites | ❌ | ✅ | Multi-site portal intranet |
+| **Elgg** | GPL-2.0 / MIT | PHP/MySQL | ✅ (Custom) | ✅ (Plugins) | ❌ | ✅ | Custom social networks |
+| **Open Social** | GPL-2.0 | PHP/Drupal | ✅ | ✅ Groups | ❌ | ✅ | Drupal community platform |
+| **eXo Platform**| AGPL-3.0 | Java | ✅ | ✅ Spaces | (Chat) | ✅ | Digital workplace portal |
 
 ---
 
